@@ -25,3 +25,12 @@ fs.writeFile("./job.txt","You got the best job with a great package!!",(err)=>{
         console.log("File Created!!");
     }
 })
+
+fs.appendFile("./job.txt","And I am Extreamly happy",(err)=>{
+    if(err){
+        console.log(err);
+    }
+    else{
+        console.log("File Appended!!");
+    }
+})
